@@ -39,6 +39,7 @@ analise-ecommerce-olist/
 │
 ├── notebooks/
 │   └── 01_exploracao_inicial.ipynb
+│   └── 02_tratamento_dados.ipynb
 │
 ├── sql/
 │
@@ -55,6 +56,15 @@ analise-ecommerce-olist/
 - [ ] Consultas e modelagem em SQL
 - [ ] Dashboard em Power BI
 - [ ] Conclusões e insights finais
+
+### Etapa atual
+
+Tratamento e preparação dos dados em andamento.
+
+Até o momento foram realizadas:
+- conversão das colunas de data para `datetime`;
+- análise e tratamento dos valores ausentes;
+- investigação dos valores ausentes em pedidos, avaliações e produtos.
 
 ## Como executar
 
