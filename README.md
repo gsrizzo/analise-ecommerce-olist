@@ -35,36 +35,46 @@ O projeto está sendo desenvolvido de forma incremental, passando pelas etapas d
 analise-ecommerce-olist/
 │
 ├── data/
-│   └── raw/
+│   ├── raw/
+│   └── processed/
 │
 ├── notebooks/
-│   └── 01_exploracao_inicial.ipynb
+│   ├── 01_exploracao_inicial.ipynb
 │   └── 02_tratamento_dados.ipynb
 │
-├── sql/
-│
 ├── powerbi/
-│
+├── sql/
 └── README.md
 ```
+
+## Dados
+
+Os dados utilizados no projeto estão organizados em duas etapas:
+
+- `data/raw/`: datasets originais da Olist, sem alterações;
+- `data/processed/`: datasets gerados após o processo de tratamento e preparação dos dados.
 
 ## Status do projeto
 
 - [x] Exploração inicial dos dados
-- [ ] Tratamento e preparação dos dados
+- [x] Tratamento e preparação dos dados
 - [ ] Análise exploratória e visualizações
 - [ ] Consultas e modelagem em SQL
 - [ ] Dashboard em Power BI
 - [ ] Conclusões e insights finais
 
-### Etapa atual
+### Tratamento realizado
 
-Tratamento e preparação dos dados em andamento.
+Durante a etapa de tratamento e preparação dos dados foram realizadas:
 
-Até o momento foram realizadas:
 - conversão das colunas de data para `datetime`;
 - análise e tratamento dos valores ausentes;
-- investigação dos valores ausentes em pedidos, avaliações e produtos.
+- investigação de inconsistências nos dados;
+- correção de registros com quantidade de parcelas igual a zero;
+- análise de inconsistências entre as datas dos pedidos;
+- padronização da nomenclatura de colunas;
+- validação dos dados após o tratamento;
+- geração dos datasets tratados em `data/processed`.
 
 ## Como executar
 
