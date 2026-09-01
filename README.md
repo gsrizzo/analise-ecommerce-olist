@@ -40,7 +40,8 @@ analise-ecommerce-olist/
 │
 ├── notebooks/
 │   ├── 01_exploracao_inicial.ipynb
-│   └── 02_tratamento_dados.ipynb
+│   ├── 02_tratamento_dados.ipynb
+│   └── 03_analise_exploratoria.ipynb
 │
 ├── powerbi/
 ├── sql/
