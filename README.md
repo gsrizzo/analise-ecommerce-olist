@@ -37,13 +37,24 @@ analise-ecommerce-olist/
 │   ├── raw/
 │   └── processed/
 │
+├── images/
+│   ├── avaliacoes_clientes.png
+│   ├── evolucao_vendas_mensais.png
+│   ├── nota_media_entrega.png
+│   ├── pagamentos_mais_utilizados.png
+│   ├── top10_categorias_qtd_itens.png
+│   └── top10_categorias_valor_vendido.png
+│
 ├── notebooks/
 │   ├── 01_exploracao_inicial.ipynb
 │   ├── 02_tratamento_dados.ipynb
 │   └── 03_analise_exploratoria.ipynb
 │
 ├── powerbi/
+│
 ├── sql/
+│   └── consultas.sql
+│
 └── README.md
 ```
 
@@ -89,7 +100,25 @@ A análise exploratória foi orientada por perguntas de negócio relacionadas ao
 - distribuição das avaliações dos clientes;
 - relação entre atraso na entrega e avaliação dos clientes.
 
-Entre os resultados encontrados, destacam-se a concentração das vendas em determinadas categorias, a predominância do cartão de crédito como forma de pagamento e a diferença entre as avaliações de pedidos entregues no prazo e pedidos atrasados.
+#### Principais resultados
+
+- aproximadamente **R$ 13,22 milhões** em produtos vendidos, considerando pedidos entregues;
+- **96.478 pedidos entregues**, com ticket médio de aproximadamente **R$ 137,04**;
+- destaque para as categorias **beleza_saude**, **relogios_presentes** e **cama_mesa_banho** em valor vendido;
+- predominância do **cartão de crédito** como forma de pagamento;
+- pedidos entregues no prazo apresentaram avaliação média de aproximadamente **4,29**, enquanto pedidos atrasados apresentaram média de **2,57**.
+
+#### Evolução das vendas mensais
+
+![Evolução das vendas mensais](images/evolucao_vendas_mensais.png)
+
+#### Categorias com maior valor vendido
+
+![Categorias com maior valor vendido](images/top10_categorias_valor_vendido.png)
+
+#### Relação entre prazo de entrega e avaliação
+
+![Nota média por situação da entrega](images/nota_media_entrega.png)
 
 ## Como executar
 
