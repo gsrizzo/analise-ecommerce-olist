@@ -70,7 +70,7 @@ Os dados utilizados no projeto estão organizados em duas etapas:
 - [x] Exploração inicial dos dados
 - [x] Tratamento e preparação dos dados
 - [x] Análise exploratória e visualizações
-- [ ] Consultas e modelagem em SQL
+- [x] Consultas e modelagem em SQL
 - [ ] Dashboard em Power BI
 - [ ] Conclusões e insights finais
 
@@ -119,6 +119,20 @@ A análise exploratória foi orientada por perguntas de negócio relacionadas ao
 #### Relação entre prazo de entrega e avaliação
 
 ![Nota média por situação da entrega](images/nota_media_entrega.png)
+
+### Análises SQL
+
+Após a análise exploratória em Python, os dados tratados foram importados para o SQL Server para realização de consultas analíticas.
+
+Foram desenvolvidas as seguintes análises:
+
+1. Valor vendido por estado;
+2. Ticket médio por estado;
+3. Categorias com maior valor vendido por estado;
+4. Prazo médio de entrega por estado;
+5. Identificação de clientes recorrentes.
+
+As consultas completas estão disponíveis em [`sql/consultas.sql`](sql/consultas.sql).
 
 ## Como executar
 
