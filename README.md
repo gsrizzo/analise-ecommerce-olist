@@ -141,7 +141,9 @@ O dashboard apresenta:
 - comparação da nota média entre pedidos entregues no prazo e atrasados;
 - filtro interativo por ano.
 
-O arquivo do dashboard está disponível em [`powerbi/dashboard_olist.pbix`](powerbi/dashboard_olist.pbix).
+![Dashboard Power BI](images/dashboard_powerbi.png)
+
+O arquivo completo do dashboard está disponível em [`powerbi/dashboard_olist.pbix`](powerbi/dashboard_olist.pbix).
 
 ## Conclusões
 
