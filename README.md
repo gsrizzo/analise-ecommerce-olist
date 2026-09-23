@@ -51,6 +51,7 @@ analise-ecommerce-olist/
 │   └── 03_analise_exploratoria.ipynb
 │
 ├── powerbi/
+│   └── dashboard_olist.pbix
 │
 ├── sql/
 │   └── consultas.sql
@@ -64,15 +65,6 @@ Os dados utilizados no projeto estão organizados em duas etapas:
 
 - `data/raw/`: datasets originais da Olist, sem alterações;
 - `data/processed/`: datasets gerados após o processo de tratamento e preparação dos dados.
-
-## Status do projeto
-
-- [x] Exploração inicial dos dados
-- [x] Tratamento e preparação dos dados
-- [x] Análise exploratória e visualizações
-- [x] Consultas e modelagem em SQL
-- [ ] Dashboard em Power BI
-- [ ] Conclusões e insights finais
 
 ### Tratamento realizado
 
@@ -133,6 +125,37 @@ Foram desenvolvidas as seguintes análises:
 5. Identificação de clientes recorrentes.
 
 As consultas completas estão disponíveis em [`sql/consultas.sql`](sql/consultas.sql).
+
+### Dashboard Power BI
+
+Após as análises em Python e SQL, foi desenvolvido um dashboard no Power BI para consolidar os principais indicadores do e-commerce.
+
+O dashboard apresenta:
+
+- valor total vendido;
+- quantidade de pedidos entregues;
+- ticket médio;
+- evolução mensal das vendas;
+- estados com maior valor vendido;
+- categorias com maior valor vendido;
+- comparação da nota média entre pedidos entregues no prazo e atrasados;
+- filtro interativo por ano.
+
+O arquivo do dashboard está disponível em [`powerbi/dashboard_olist.pbix`](powerbi/dashboard_olist.pbix).
+
+## Conclusões
+
+A análise dos dados da Olist permitiu identificar padrões relevantes relacionados ao desempenho de vendas, perfil dos pedidos e experiência dos clientes.
+
+Entre os principais pontos observados:
+
+- as vendas apresentaram crescimento ao longo de 2017, com destaque para o pico registrado em novembro;
+- as categorias Beleza e Saúde, Relógios e Presentes e Cama, Mesa e Banho estiveram entre as principais em valor vendido;
+- São Paulo concentrou o maior valor vendido entre os estados;
+- o cartão de crédito foi a forma de pagamento mais utilizada;
+- pedidos entregues no prazo apresentaram nota média de **4,29**, enquanto pedidos atrasados tiveram média de **2,57**, indicando uma associação relevante entre o cumprimento do prazo de entrega e a satisfação dos clientes.
+
+O projeto integrou Python, SQL e Power BI em diferentes etapas do processo de análise, desde a preparação dos dados até a construção de consultas e visualizações para apresentação dos resultados.
 
 ## Como executar
 
